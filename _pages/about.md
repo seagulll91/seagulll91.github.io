@@ -14,7 +14,7 @@ I am a second-year master’s student at Xiamen University, advised by Prof. Shi
 
 {{ post.excerpt | markdownify }}
 
-{% if post.paperurl %}[Download Paper]({{ post.paperurl }}){% endif %}{% if post.bibtexurl %} | [Download Bibtex]({{ post.bibtexurl }}){% endif %}
+{% if post.paperurl %}[Download Paper]({{ post.paperurl }}){% endif %}
 
 <br><br>
 {% endfor %}
