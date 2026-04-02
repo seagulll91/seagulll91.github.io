@@ -10,7 +10,7 @@ I am a second-year master’s student at Xiamen University, advised by Prof. Shi
 ## Publications
 
 {% for post in site.publications reversed %}
-### [{{ post.title }}]({{ post.url }})
+### [{{ post.title }}]({{ post.redirecturl | default: post.url }})
 
 {{ post.excerpt | markdownify }}
 
