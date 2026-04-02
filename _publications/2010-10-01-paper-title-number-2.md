@@ -7,7 +7,7 @@ excerpt: 'Jiawei Fang, Haishan Song, Chengxu Zuo, **Xiaoxia Gao**, Xiaowei Chen,
 venue: 'ICML 2024'
 redirecturl: "https://arxiv.org/abs/2405.16152"
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://arxiv.org/abs/2405.16152'
+paperurl: 'https://arxiv.org/pdf/2405.16152'
 ---
 
 ****
