@@ -2,7 +2,7 @@
 title: "Foundational Garment Poser: Scaling Garment-based Motion Capture"
 collection: publications
 category: manuscripts
-excerpt: 'We introduce Foundational Garment Poser (FGP), a foundation model for garment-based inertial motion capture.'
+excerpt: 'We introduce Foundational Garment Poser (FGP), a foundation model for garment-based inertial motion capture. _Plan to submit to Siggraph Asia 2026_'
 slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://academicpages.github.io/files/paper1.pdf'
 bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
