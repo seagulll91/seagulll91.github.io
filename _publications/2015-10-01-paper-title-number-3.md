@@ -4,8 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2015-10-01-paper-title-number-3
 excerpt: 'Propose a novel motion-capturing system using daily garments with two elbow-attached flex sensors and four Inertial Measurement Units.'
-date: 2025
-venue: 'CHI'
+venue: 'CHI 2025'
 slidesurl: 'https://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
 ---
