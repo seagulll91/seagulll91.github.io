@@ -4,8 +4,6 @@ collection: publications
 category: conferences
 permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: 'We propose WIFE (Wear-It-Free), the first imperceptible calibration framework for flexible-sensor-based joint tracking, ensuring long-term tracking accuracy without requiring explicit user calibration. '
-date: 2024-02-17
-venue: 'NMI'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
 ---
 
