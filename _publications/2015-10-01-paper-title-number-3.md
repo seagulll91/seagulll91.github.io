@@ -3,7 +3,7 @@ title: "FIP: Endowing Robust Motion Capture on Daily Garment by Fusing Flex and 
 collection: publications
 category: manuscripts
 permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'Propose a novel motion-capturing system using daily garments with two elbow-attached flex sensors and four Inertial Measurement Units.'
+excerpt: 'Propose a novel motion-capturing system using daily garments with two elbow-attached flex sensors and four Inertial Measurement Units. _Published in CHI 2025_'
 venue: 'CHI 2025'
 slidesurl: 'https://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
