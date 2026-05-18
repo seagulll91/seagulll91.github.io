@@ -1,0 +1,56 @@
+/*
+ * Adobe Garamond Pro (self-hosted)
+ * Place licensed .woff2 files under assets/fonts/ (see README in patch folder).
+ */
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/AGaramondPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/AGaramondPro-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/AGaramondPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/AGaramondPro-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Site-wide font (body, nav, sidebar, footer, headings) */
+html,
+body,
+.masthead,
+.greedy-nav,
+.page__footer,
+.sidebar,
+.page__content,
+.archive__item-title,
+.page__title,
+h1, h2, h3, h4, h5, h6,
+p,
+li,
+a,
+button,
+input,
+textarea,
+select {
+  font-family: "Adobe Garamond Pro", "EB Garamond", Garamond, "Times New Roman", Times, serif !important;
+}
