@@ -1,7 +1,7 @@
 ---
 layout: single
 author_profile: true
-title: "Xiaoxia Gao"
+title: "About Me"
 permalink: /
 ---
 
