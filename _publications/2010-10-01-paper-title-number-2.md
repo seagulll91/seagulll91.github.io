@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 order: 4
 permalink: /publication/2010-10-01-paper-title-number-2
-authors: "Jiawei Fang, Haishan Song, Chengxu Zuo, **Xiaoxia Gao**, Xiaowei Chen, Shihui Guo, Yipeng Qin"
+authors: "Jiawei Fang, Haishan Song, Chengxu Zuo, <strong>Xiaoxia Gao</strong>, Xiaowei Chen, Shihui Guo, Yipeng Qin"
 venue: "ICML 2024"
 abstract: "Propose a novel Support-based transfer learning method for Sim2Real motion capture, namely SuDA (Support-based Domain Adaptation), which registers function supports instead of data distribution to address the data-hungry problem."
 teaser: "suda.png"
