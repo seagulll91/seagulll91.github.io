@@ -72,6 +72,12 @@
   text-decoration: underline;
 }
 
+.publication-item__authors em {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--global-text-color);
+}
+
 .publication-item__venue {
   margin: 0;
   font-size: 1rem;
