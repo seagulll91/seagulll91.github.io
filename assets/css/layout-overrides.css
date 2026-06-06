@@ -3,8 +3,8 @@
  */
 
 :root {
-  --site-content-max-width: 980px;
-  --site-side-padding: clamp(2rem, 8vw, 6rem);
+  --site-content-max-width: 820px;
+  --site-side-padding: clamp(2.5rem, 12vw, 9rem);
 }
 
 .masthead__inner-wrap,
