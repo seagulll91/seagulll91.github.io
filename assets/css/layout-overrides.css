@@ -3,7 +3,7 @@
  */
 
 :root {
-  --site-content-max-width: 1040px;
+  --site-content-max-width: 1240px;
   --site-side-padding: clamp(1.5rem, 3vw, 2.5rem);
 }
 
