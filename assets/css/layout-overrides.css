@@ -1,29 +1,49 @@
-/* Fix sidebar profile: stay pinned while scrolling the page */
-@media screen and (min-width: 1024px) {
-  #main > .sidebar.sticky {
-    position: fixed !important;
-    top: 0 !important;
-    left: max(1em, calc((100vw - 1500px) / 2 + 1em));
-    width: 250px;
-    max-width: 250px;
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 10;
-    padding-top: 70px;
-  }
-}
+/*
+ * Reference-style layout: left profile column stays put, right content scrolls.
+ * Overrides Academic Pages sticky/fixed sidebar conflicts.
+ */
 
-/* Widen main content and publications */
 @media screen and (min-width: 1024px) {
   #main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
     max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #main > .sidebar.sticky {
+    position: sticky !important;
+    top: 90px !important;
+    flex: 0 0 240px;
+    width: 240px !important;
+    max-width: 240px !important;
+    height: auto !important;
+    max-height: calc(100vh - 90px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    float: none !important;
+    left: auto !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    z-index: 5;
+    -webkit-transform: none !important;
+    transform: none !important;
   }
 
   #main > .page {
-    width: calc(100% - 280px) !important;
-    margin-left: 280px !important;
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto !important;
+    max-width: none !important;
+    margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-right: 1.5rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     float: none !important;
   }
 
@@ -34,12 +54,15 @@
 }
 
 @media screen and (min-width: 925px) and (max-width: 1023px) {
-  #main {
-    max-width: 100%;
+  #main > .sidebar.sticky {
+    position: sticky !important;
+    top: 90px !important;
+    align-self: flex-start;
   }
+}
 
-  #main > .page {
-    width: 100% !important;
-    padding-right: 1em !important;
+@media screen and (max-width: 1023px) {
+  #main {
+    display: block;
   }
 }
