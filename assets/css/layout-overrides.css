@@ -2,12 +2,24 @@
  * Homepage: profile + about on top row, publications full width below.
  */
 
+:root {
+  --site-content-max-width: 980px;
+  --site-side-padding: clamp(2rem, 8vw, 6rem);
+}
+
+.masthead__inner-wrap,
+.page__footer footer {
+  max-width: var(--site-content-max-width) !important;
+  padding-left: var(--site-side-padding) !important;
+  padding-right: var(--site-side-padding) !important;
+}
+
 .home-main {
-  max-width: 1500px;
+  max-width: var(--site-content-max-width);
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: var(--site-side-padding);
+  padding-right: var(--site-side-padding);
 }
 
 .home-main > .page--home {
@@ -88,11 +100,11 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 3rem;
-    max-width: 1500px;
+    max-width: var(--site-content-max-width);
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: var(--site-side-padding);
+    padding-right: var(--site-side-padding);
   }
 
   #main:not(.home-main) > .sidebar.sticky {
