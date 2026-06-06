@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main" class="home-main">
+  <article class="page page--home" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="home-hero">
+      <aside class="home-hero__profile">
+        {% include author-profile.html %}
+      </aside>
+      <section class="home-hero__about page__content" itemprop="text">
+        {{ content }}
+      </section>
+    </div>
+
+    <section class="home-publications">
+      <h2>Publications</h2>
+      <div class="publication-list">
+        {% for post in site.publications reversed %}
+          {% include publication-card.html post=post %}
+        {% endfor %}
+      </div>
+    </section>
+  </article>
+</div>

@@ -1,10 +1,89 @@
 /*
- * Reference-style layout: left profile column stays put, right content scrolls.
- * Overrides Academic Pages sticky/fixed sidebar conflicts.
+ * Homepage: profile + about on top row, publications full width below.
  */
 
+.home-main {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.home-main > .page--home {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+}
+
+.home-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3rem;
+  padding-top: 0.5rem;
+}
+
+.home-hero__profile {
+  flex: 0 0 240px;
+  max-width: 240px;
+}
+
+.home-hero__profile .author__avatar {
+  display: block;
+  width: 100%;
+}
+
+.home-hero__profile .author__content,
+.home-hero__profile .author__urls-wrapper {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.home-hero__about {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.home-hero__about p {
+  margin-top: 0;
+}
+
+.home-publications {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--global-border-color);
+  width: 100%;
+}
+
+.home-publications h2 {
+  margin-top: 0;
+  color: #B8860B;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+@media screen and (max-width: 768px) {
+  .home-hero {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .home-hero__profile {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/*
+ * Other pages with sidebar: keep profile column sticky while content scrolls.
+ */
 @media screen and (min-width: 1024px) {
-  #main {
+  #main:not(.home-main) {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -16,7 +95,7 @@
     padding-right: 1.5rem;
   }
 
-  #main > .sidebar.sticky {
+  #main:not(.home-main) > .sidebar.sticky {
     position: sticky !important;
     top: 90px !important;
     flex: 0 0 240px;
@@ -35,7 +114,7 @@
     transform: none !important;
   }
 
-  #main > .page {
+  #main:not(.home-main) > .page {
     flex: 1 1 auto;
     min-width: 0;
     width: auto !important;
@@ -53,16 +132,8 @@
   }
 }
 
-@media screen and (min-width: 925px) and (max-width: 1023px) {
-  #main > .sidebar.sticky {
-    position: sticky !important;
-    top: 90px !important;
-    align-self: flex-start;
-  }
-}
-
 @media screen and (max-width: 1023px) {
-  #main {
+  #main:not(.home-main) {
     display: block;
   }
 }
