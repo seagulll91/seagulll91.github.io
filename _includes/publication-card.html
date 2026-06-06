@@ -30,7 +30,7 @@
     </h3>
 
     {% if post.authors %}
-      <div class="publication-item__authors">{{ post.authors | markdownify }}</div>
+      <div class="publication-item__authors">{{ post.authors }}</div>
     {% endif %}
 
     {% if post.venue or post.pubstatus %}

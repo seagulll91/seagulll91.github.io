@@ -70,12 +70,7 @@
 .publication-item__authors strong {
   font-weight: 700;
   text-decoration: underline;
-}
-
-.publication-item__authors em {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: var(--global-text-color);
+  font-style: normal;
 }
 
 .publication-item__venue {
