@@ -2,6 +2,7 @@
 title: "Wear-It-Free: Dynamic Calibration Joint Tracking on Flexible Sensors with Motion-Invariant Strain Surface"
 collection: publications
 category: conferences
+order: 2
 permalink: /publication/2024-02-17-paper-title-number-4
 authors: "**Xiaoxia Gao***, Jiawei Fang*, Yipeng Qin, Anjun Chen, Qi Ye, Shihui Guo"
 pubstatus: "Plan to submit to Nature Machine Intelligence"

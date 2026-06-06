@@ -10,7 +10,8 @@ author_profile: true
 {% endif %}
 
 <div class="publication-list">
-{% for post in site.publications reversed %}
+{% assign pubs = site.publications | sort: "order" %}
+{% for post in pubs %}
   {% include publication-card.html post=post %}
 {% endfor %}
 </div>

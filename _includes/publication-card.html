@@ -33,13 +33,11 @@
       <div class="publication-item__authors">{{ post.authors | markdownify }}</div>
     {% endif %}
 
-    {% if post.venue or post.date or post.pubstatus %}
+    {% if post.venue or post.pubstatus %}
       <p class="publication-item__venue">
         {% if post.venue %}<strong>{{ post.venue }}</strong>{% endif %}
-        {% if post.venue and post.date %} · {% endif %}
-        {% if post.date %}{{ post.date | date: "%B %Y" }}{% endif %}
+        {% if post.venue and post.pubstatus %} · {% endif %}
         {% if post.pubstatus %}
-          {% if post.venue or post.date %} · {% endif %}
           {% unless post.venue %}<strong>{% endunless %}{{ post.pubstatus }}{% unless post.venue %}</strong>{% endunless %}
         {% endif %}
       </p>
