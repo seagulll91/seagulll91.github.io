@@ -9,16 +9,8 @@ I am a second-year master’s student at Xiamen University, advised by Prof. Shi
 
 ## Publications
 
+<div class="publication-list">
 {% for post in site.publications reversed %}
-{% if post.redirecturl %}
-### [{{ post.title }}]({{ post.redirecturl }})
-{% else %}
-### {{ post.title }}
-{% endif %}
-
-{{ post.excerpt | markdownify }}
-
-{% if post.paperurl %}[Download Paper]({{ post.paperurl }}){% endif %}
-
-<br><br>
+  {% include publication-card.html post=post %}
 {% endfor %}
+</div>

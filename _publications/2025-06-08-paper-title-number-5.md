@@ -2,7 +2,8 @@
 title: "Foundation Garment Poser: An Open Foundation Model for Garment-based Inertial Motion Capture"
 collection: publications
 category: manuscripts
-excerpt: '**Xiaoxia Gao**, Ruonan Zheng, Yipeng Qin, Anjun Chen, Shihui Guo, Jiawei Fang<br><br><img src="/images/representative_figure.jpg" width="720"><br><br>We introduce Foundational Garment Poser (FGP), a foundation model for garment-based inertial motion capture. FGP achieves state-of-the-art accuracy, zero-shot generalization to unseen garments, and improved robustness during long-term tracking.  _Under review at SIGGRAPH Asia 2026_'
+authors: "**Xiaoxia Gao**, Ruonan Zheng, Yipeng Qin, Anjun Chen, Shihui Guo, Jiawei Fang"
+pubstatus: "Under review at SIGGRAPH Asia 2026"
+abstract: "We introduce Foundational Garment Poser (FGP), a foundation model for garment-based inertial motion capture. FGP achieves state-of-the-art accuracy, zero-shot generalization to unseen garments, and improved robustness during long-term tracking."
+teaser: "FGP.jpg"
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
-

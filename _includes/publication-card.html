@@ -1,0 +1,72 @@
+{% include base_path %}
+
+{% assign post = include.post %}
+{% assign teaser = post.teaser | default: post.header.teaser | default: site.teaser %}
+
+<article class="publication-item">
+  {% if teaser %}
+    <div class="publication-item__teaser">
+      {% if post.redirecturl %}
+        <a href="{{ post.redirecturl }}">
+      {% endif %}
+      <img
+        src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
+        alt="{{ post.title | escape }}"
+        loading="lazy"
+      />
+      {% if post.redirecturl %}
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="publication-item__content">
+    <h3 class="publication-item__title">
+      {% if post.redirecturl %}
+        <a href="{{ post.redirecturl }}">{{ post.title }}</a>
+      {% else %}
+        {{ post.title }}
+      {% endif %}
+    </h3>
+
+    {% if post.authors %}
+      <div class="publication-item__authors">{{ post.authors | markdownify }}</div>
+    {% endif %}
+
+    {% if post.venue or post.date or post.pubstatus %}
+      <p class="publication-item__venue">
+        {% if post.venue %}<strong>{{ post.venue }}</strong>{% endif %}
+        {% if post.venue and post.date %} · {% endif %}
+        {% if post.date %}{{ post.date | date: "%B %Y" }}{% endif %}
+        {% if post.pubstatus %}
+          {% if post.venue or post.date %} · {% endif %}
+          {% unless post.venue %}<strong>{% endunless %}{{ post.pubstatus }}{% unless post.venue %}</strong>{% endunless %}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if post.abstract %}
+      <div class="publication-item__abstract">{{ post.abstract | markdownify }}</div>
+    {% endif %}
+
+    {% if post.paperurl or post.bibtexurl or post.slidesurl or post.redirecturl %}
+      <div class="publication-item__links">
+        {% if post.paperurl %}
+          <a class="publication-item__btn" href="{{ post.paperurl }}">PDF</a>
+        {% endif %}
+        {% if post.bibtexurl %}
+          <a class="publication-item__btn" href="{{ post.bibtexurl }}">Cite</a>
+        {% endif %}
+        {% if post.redirecturl and post.redirecturl contains 'arxiv.org' %}
+          <a class="publication-item__btn" href="{{ post.redirecturl }}">arXiv</a>
+        {% endif %}
+        {% if post.doi %}
+          <a class="publication-item__btn" href="https://doi.org/{{ post.doi }}">DOI</a>
+        {% endif %}
+        {% if post.slidesurl %}
+          <a class="publication-item__btn" href="{{ post.slidesurl }}">Slides</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>
