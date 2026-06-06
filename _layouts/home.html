@@ -12,6 +12,13 @@ layout: default
       </aside>
       <section class="home-hero__about page__content" itemprop="text">
         {{ content }}
+        {% if site.author.email %}
+          <p class="home-hero__email">
+            <a href="mailto:{{ site.author.email }}">
+              <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>{{ site.author.email }}
+            </a>
+          </p>
+        {% endif %}
       </section>
     </div>
 
