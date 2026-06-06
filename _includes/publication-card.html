@@ -35,11 +35,9 @@
 
     {% if post.venue or post.pubstatus %}
       <p class="publication-item__venue">
-        {% if post.venue %}<strong>{{ post.venue }}</strong>{% endif %}
+        {% if post.venue %}{{ post.venue }}{% endif %}
         {% if post.venue and post.pubstatus %} · {% endif %}
-        {% if post.pubstatus %}
-          {% unless post.venue %}<strong>{% endunless %}{{ post.pubstatus }}{% unless post.venue %}</strong>{% endunless %}
-        {% endif %}
+        {% if post.pubstatus %}{{ post.pubstatus }}{% endif %}
       </p>
     {% endif %}
 
@@ -47,10 +45,16 @@
       <div class="publication-item__abstract">{{ post.abstract | markdownify }}</div>
     {% endif %}
 
-    {% if post.paperurl or post.bibtexurl or post.slidesurl or post.redirecturl %}
+    {% if post.paperurl or post.bibtexurl or post.slidesurl or post.codeurl or post.videourl or post.redirecturl %}
       <div class="publication-item__links">
         {% if post.paperurl %}
-          <a class="publication-item__btn" href="{{ post.paperurl }}">PDF</a>
+          <a class="publication-item__btn" href="{{ post.paperurl }}">Paper</a>
+        {% endif %}
+        {% if post.codeurl %}
+          <a class="publication-item__btn" href="{{ post.codeurl }}">GitHub</a>
+        {% endif %}
+        {% if post.videourl %}
+          <a class="publication-item__btn" href="{{ post.videourl }}">Video</a>
         {% endif %}
         {% if post.bibtexurl %}
           <a class="publication-item__btn" href="{{ post.bibtexurl }}">Cite</a>
