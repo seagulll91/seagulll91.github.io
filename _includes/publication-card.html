@@ -10,7 +10,7 @@
         <a href="{{ post.redirecturl }}">
       {% endif %}
       <img
-        src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
+        src="{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/' %}{{ teaser | prepend: '/' | prepend: base_path }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
         alt="{{ post.title | escape }}"
         loading="lazy"
       />
