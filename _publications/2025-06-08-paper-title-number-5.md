@@ -7,4 +7,5 @@ authors: "<strong>Xiaoxia Gao</strong>, Ruonan Zheng, Qinze Zhou, Zixuan Zeng, Y
 pubstatus: "Under review at SIGGRAPH Asia 2026"
 abstract: "We introduce Foundational Garment Poser (FGP), a foundation model for garment-based inertial motion capture. FGP achieves state-of-the-art accuracy, zero-shot generalization to unseen garments, and improved robustness during long-term tracking."
 teaser: "downloads/AsigFIg/representative_figure.jpg"
+paperurl: "/files/foundation-garment-poser.pdf"
 ---

@@ -127,11 +127,8 @@
   object-fit: contain;
 }
 
-.home-hero__profile .author__content,
-.home-hero__profile .author__urls-wrapper {
-  display: block;
-  padding-left: 0;
-  padding-right: 0;
+.home-hero__profile .author__content {
+  display: none;
 }
 
 .home-hero__profile .author__urls-wrapper {
