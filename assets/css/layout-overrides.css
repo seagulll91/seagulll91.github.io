@@ -14,6 +14,66 @@
   padding-right: var(--site-side-padding) !important;
 }
 
+.masthead__inner-wrap--portfolio {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+.masthead__brand a {
+  display: block;
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.masthead__tagline {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--global-text-color);
+}
+
+.masthead__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.masthead__nav a {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.masthead__nav a.is-active,
+.masthead__nav a:hover {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .masthead__inner-wrap--portfolio {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .masthead__nav {
+    justify-content: flex-start;
+    gap: 1.25rem;
+  }
+}
+
 /* #main (ID) in main.css beats .home-main — must use #main.home-main */
 #main.home-main {
   max-width: var(--site-content-max-width) !important;
@@ -74,11 +134,15 @@
   width: 100%;
 }
 
-.home-publications h2 {
+.home-publications h2,
+.section-heading--academic {
   margin-top: 0;
   color: #B8860B;
   padding-bottom: 0.5em;
   border-bottom: 1px solid var(--global-border-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
