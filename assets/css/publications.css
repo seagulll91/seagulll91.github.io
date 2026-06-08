@@ -7,7 +7,7 @@
 
 .publication-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2.5rem;
 }
 
@@ -28,8 +28,7 @@
 .publication-item__teaser img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  height: auto;
 }
 
 .publication-item__content {
@@ -43,7 +42,7 @@
 
 .publication-item__title {
   margin: 0;
-  font-size: 1.45rem;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.35;
 }
@@ -141,9 +140,5 @@
     flex: none;
     width: 100%;
     max-width: 100%;
-  }
-
-  .publication-item__teaser img {
-    aspect-ratio: 16 / 10;
   }
 }
