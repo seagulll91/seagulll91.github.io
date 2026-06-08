@@ -1,0 +1,65 @@
+/*
+ * Clean sans-serif typography (Inter), similar to modern academic homepages.
+ */
+:root {
+  --site-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --site-text-color: #111;
+  --site-link-color: #0066cc;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+.masthead,
+.greedy-nav,
+.page__footer,
+.sidebar,
+.page__content,
+.archive__item-title,
+.page__title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button,
+input,
+textarea,
+select {
+  font-family: var(--site-font-sans) !important;
+}
+
+body {
+  color: var(--site-text-color);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.page__content p,
+.home-hero__about p,
+.publication-item__authors,
+.publication-item__venue,
+.publication-item__abstract {
+  line-height: 1.6;
+}
+
+.page__content a:not(.publication-item__btn):not(.publication-item__title a),
+.home-hero__about a {
+  color: var(--site-link-color);
+  text-decoration: none;
+}
+
+.page__content a:not(.publication-item__btn):not(.publication-item__title a):hover,
+.home-hero__about a:hover {
+  text-decoration: underline;
+}

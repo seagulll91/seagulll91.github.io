@@ -32,10 +32,10 @@
 
 .masthead__brand a {
   display: block;
-  font-size: 1.85rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--global-text-color);
+  color: #1d1d1f;
   text-decoration: none;
 }
 
@@ -142,12 +142,12 @@
 }
 
 .home-hero__email a {
-  color: inherit;
-  text-decoration: underline;
+  color: var(--site-link-color, #0066cc);
+  text-decoration: none;
 }
 
 .home-hero__email a:hover {
-  color: inherit;
+  text-decoration: underline;
 }
 
 .home-hero__email i {
@@ -173,12 +173,13 @@
 .home-publications h2,
 .section-heading--academic {
   margin-top: 0;
-  color: #000;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 700;
   padding-bottom: 0.5em;
   border-bottom: 1px solid var(--global-border-color);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
