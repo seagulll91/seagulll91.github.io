@@ -3,9 +3,9 @@
  */
 
 :root {
-  /* ~1.2× side whitespace vs previous 1180px centered layout */
-  --site-content-max-width: min(1180px, calc(1416px - 20vw));
-  --site-side-padding: clamp(1.2rem, 2.4vw, 1.8rem);
+  /* ~1.5× side whitespace vs original 1180px centered layout */
+  --site-content-max-width: min(1180px, calc(1770px - 50vw));
+  --site-side-padding: clamp(1.5rem, 3vw, 2.25rem);
 }
 
 .masthead__inner-wrap,
