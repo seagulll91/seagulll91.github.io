@@ -4,4 +4,4 @@ title: ""
 permalink: /
 ---
 
-I am a second-year master’s student at Xiamen University, advised by Prof. Shihui Guo. My research interests lie in embodied intelligence and human motion capture methods for wearable sensing systems.
+👋 Hi. I'm Xiaoxia Gao, a second-year master's student in the school of informatics at [Xiamen University](https://en.xmu.edu.cn/index.htm), advised by [Prof. Shihui Guo](https://www.humanplus.xyz/). My research focuses on wearable systems, human motion capture and human-computer interaction.
