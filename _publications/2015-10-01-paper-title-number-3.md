@@ -2,7 +2,7 @@
 title: "FIP: Endowing Robust Motion Capture on Daily Garment by Fusing Flex and Inertial Sensors"
 collection: publications
 category: manuscripts
-order: 3
+order: 4
 permalink: /publication/2015-10-01-paper-title-number-3
 authors: "Jiawei Fang*, Ruonan Zheng*, Yuan Yao, <strong>Xiaoxia Gao</strong>, Chengxu Zuo, Shihui Guo, Yiyue Luo"
 venue: "CHI 2025"

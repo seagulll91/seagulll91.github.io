@@ -2,7 +2,7 @@
 title: "Support-based Domain Adaptation for Sim2Real Motion Capture with Flexible Sensors"
 collection: publications
 category: manuscripts
-order: 4
+order: 5
 permalink: /publication/2010-10-01-paper-title-number-2
 authors: "Jiawei Fang, Haishan Song, Chengxu Zuo, <strong>Xiaoxia Gao</strong>, Xiaowei Chen, Shihui Guo, Yipeng Qin"
 venue: "ICML 2024"
