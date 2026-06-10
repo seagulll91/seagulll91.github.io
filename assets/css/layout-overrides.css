@@ -65,7 +65,11 @@
   text-decoration: none;
 }
 
-.masthead__nav a.is-active,
+.masthead__nav a.is-active {
+  font-weight: 400;
+  color: #000 !important;
+}
+
 .masthead__nav a:hover {
   font-weight: 700;
   color: #000 !important;

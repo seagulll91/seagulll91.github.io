@@ -19,13 +19,13 @@
         {% assign link_href = link_domain | append: link.url %}
         {% assign is_active = false %}
         {% if link.url == '/' and page.url == '/' %}
-          {% assign is_active = true %}
+          {% assign is_active = false %}
         {% elsif link.title == 'academic' and page.url contains '/academic' %}
           {% assign is_active = true %}
         {% elsif link.url != '/' and link.url != '/#academic' and page.url contains link.url %}
           {% assign is_active = true %}
         {% endif %}
-        <a href="{{ link_href }}"{% if is_active %} class="is-active"{% endif %}>{{ link.title | downcase }}</a>
+        <a href="{{ link_href }}"{% if is_active %} class="is-active"{% endif %}{% if link.url contains '.pdf' %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title | downcase }}</a>
       {% endfor %}
     </nav>
   </div>

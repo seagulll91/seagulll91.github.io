@@ -9,3 +9,5 @@ main:
     url: /
   - title: "academic"
     url: /#academic
+  - title: "CV"
+    url: /files/xiaoxia-gao-cv.pdf
